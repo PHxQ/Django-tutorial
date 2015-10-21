@@ -1,3 +1,4 @@
+# coding:utf-8 
 """
 Django settings for tutorial project.
 
@@ -56,7 +57,7 @@ ROOT_URLCONF = 'tutorial.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],  # 添加了根目录的templates
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
